@@ -1,0 +1,32 @@
+*{ box-sizing: border-box; }
+body { margin:0; }
+li {
+    margin: 2%;
+    border: 3px solid rgb(0, 100, 200);
+    border-radius: 1px;
+}
+
+li:nth-child(1){
+    color: red;
+}
+li:nth-child(2){
+    color: green;
+}
+li:nth-child(3){
+    color: hsla(144, 255%, 70%, 0.5);
+}
+
+.circulo {
+    width: 100px;
+    height: 100px;
+    background-color: hsla(210, 100%, 50%, 1);
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px 1px;
+    margin-bottom: 20px;
+}
+
+.teste {
+    border: 1px solid #0fff;
+    padding: 100px;
+    margin: 10px;
+}
