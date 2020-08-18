@@ -1,0 +1,65 @@
+/* comandos utilizados
+
+    text-align // alinhamento do texto, center, right, left e justify
+    text-decoration // decoração do texto, underline, none, through...
+    font-weigh // coloca o texto em negrito, bold, normal.
+    text-transform // transforma o texto, uppercase, lowercase // deixa tudo em caixa alta ou baixa.
+    letter-spacing // espachamanto entre as letras
+    word-spacing // espachamanto entre as palavras
+    line-height // altura da linha
+    text-shadow // sombra do text com os parametros de X Y Esfumaçamento e cor // 5px 5px 2px #000000
+    font-family // quando for uma fonte externa utiliza '' para chamar ela // font-family: 'Press Start 2P'
+*/
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 50px;
+}
+
+h1, h2, h3 {
+    font-family: 'Press Start 2P';
+}
+
+
+p {
+    color: #0000ff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Chilanka';
+    text-align: left;
+    line-height: 40px;
+    text-shadow: 5px 5px 1px #000;
+}
+
+/* Formatando tabela com CSS */
+
+table {
+    width: 600px;
+    /* border: 1px solid #000; altera apenas a borda da area da tabela(contorno) */
+}
+
+table thead {
+    background-color: #AAA;
+}
+
+td, th {
+    /* border: 1px solid #000; aplica em todos os itens da tabela que são as colunas */
+    text-align: left;
+    padding: 10px;
+}
+
+tbody td {
+    border-bottom: 1px solid #DDD;
+}
+
+tbody tr:hover {
+    background-color: #EEE;
+}
+
+/* Todas a linhas pares ficaram com a cor de fundo diferente */
+
+tbody tr:nth-child(even ) {
+    background-color: #DDD;
+}

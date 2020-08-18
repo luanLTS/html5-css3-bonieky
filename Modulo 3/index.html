@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Modulo 3</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontes externas com o google font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chilanka&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Formatação com css</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, alias quidem eligendi distinctio,
+        aut ipsum error similique accusamus ducimus odit labore! Rem porro cupiditate cumque pariatur dolore quis
+        voluptate totam.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, alias quidem eligendi distinctio,
+        aut ipsum error similique accusamus ducimus odit labore! Rem porro cupiditate cumque pariatur dolore quis
+        voluptate totam.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, alias quidem eligendi distinctio,
+        aut ipsum error similique accusamus ducimus odit labore! Rem porro cupiditate cumque pariatur dolore quis
+        voluptate totam.
+    </p>
+
+    <h1>Listas</h1>
+
+    <ul>
+        <li>Café</li>
+        <li>
+            Chá
+            <ul>
+                <li>Preto</li>
+                <li>
+                    Verde
+                    <ul>
+                        <li>Tipo 1</li>
+                        <li>Tipo 2</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Leite</li>
+    </ul>
+    <ol type="I">
+        <li>Luan</li>
+        <li>Luiz</li>
+    </ol>
+
+    <h1>Tabelas</h1>
+
+    <!-- 
+            tr // linha
+            td // coluna
+            th // cabeçalho
+            thead // é o cabeçalho da tabela, em casos de mais de uma pagina, todas elas ficaram com os itens que estão dentro dela.
+            tbody // é o corpo da tabela
+         -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Item 1</th>
+                <th>Item 2</th>
+                <th>Item 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Formulários</h1>
+
+    <form method="GET" action="../Modulo 2/login.html">
+        <label for="nome">text</label>
+        <input type="text" name="nome" id="nome" value="Luan" /><br />
+        <label for="idade">number</label>
+        <input type="number" name="idade" id="idade" value="17" /><br />
+        <label for="dataNasc">date</label>
+        <input type="date" name="dataNasc" id="dataNasc" /><br />
+        <label for="senha">password</label>
+        <input type="password" name="senha" id="senha" value="1234" /><br />
+        <label for="data">datatime-local</label>
+        <input type="datetime-local" name="data" id="data" value="1234" /><br />
+        <label for="cor">color</label>
+        <input type="color" name="cor" id="cor" value="#ff45f1" /><br />
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" value="luanlts@outlook.com" /><br />
+        <label for="mes">month</label>
+        <input type="month" name="mes" id="mes" /><br />
+        <label>
+            time
+            <input type="time" name="hora" /><br />
+        </label>
+        <label>
+            <input type="checkbox" name="termos" />
+            Eu declaro que li e aceito todos os termos de uso desta página
+        </label>
+
+        <h3>Select</h3>
+        <select name="order">
+            <option></option>
+            <option value="bestSeller">Recentes</option>
+            <option value="last">Mais vendidos</option>
+        </select>
+        
+        <br />
+        
+        <textarea name="descricao" style="width: 400px;height: 200px;"></textarea>
+
+    </form>
+
+</body>
+
+</html>
