@@ -37,7 +37,7 @@ p {
 
 table {
     width: 600px;
-    /* border: 1px solid #000; altera apenas a borda da area da tabela(contorno) */
+    border: 2px solid #000; /*altera apenas a borda da area da tabela(contorno)*/
 }
 
 table thead {
@@ -62,4 +62,38 @@ tbody tr:hover {
 
 tbody tr:nth-child(even ) {
     background-color: #DDD;
+}
+
+
+.login label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.login input[type=text], .login textarea, .login select, .login button {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #AAA;
+    outline: 0;
+}
+
+.login textarea {
+    height: 150px;
+    resize: none;
+}
+
+.login button {
+    font-size: 13px;
+    font-family: 'Press Start 2P';
+    border-radius: 10px;
+    background-color: #AAA;
+    color: #FFF;
+    text-shadow: 2px 3px 1px #000;
+}
+
+.login button:hover {
+    color: #000;
+    text-shadow: 2px 3px 1px #FFF;
+
 }

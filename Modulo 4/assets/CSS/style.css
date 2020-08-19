@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+html, body {
+    height: 100%;
+}
+
+@media only screen and (max-width: 800px) and (min-width: 500px) {
+    body {
+        background-color: aqua;
+    }
+}
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: red;
+    }
+}
+
+.container {
+    max-width: 1040px;
+    width: 100%;
+    margin: auto;
+}
+video {
+    width: 100%;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Press Start 2P';
+}
+audio {
+    outline: 0;
+    width: 100%;
+}
