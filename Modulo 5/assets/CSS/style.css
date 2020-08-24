@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: #DDD;
+    margin: 20px;
+}
+
+.div1 {
+    flex: 10;
+    background-color: #FF0000;
+    margin: 5px;
+    padding: 20px;
+    font-size: 18px;
+}
+.div2 {
+    flex: 1;
+    background-color: #FF0000;
+    margin: 5px;
+    padding: 20px;
+    font-size: 18px;
+}
+.div3 {
+    flex: 1;
+    background-color: #FF0000;
+    margin: 5px;
+    padding: 20px;
+    font-size: 18px;
+}
+.div4 {
+    flex: 1;
+    background-color: #FF0000;
+    margin: 5px;
+    padding: 20px;
+    font-size: 18px;
+}
