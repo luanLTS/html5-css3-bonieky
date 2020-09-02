@@ -282,6 +282,11 @@ footer {
     flex: 1;
 }
 
+.footerMenu a {
+    display: block;
+    text-decoration: none;
+}
+
 .fm1,
 .fm2,
 .fm3 {
@@ -362,6 +367,42 @@ footer .icon {
 footer .icon img {
     width: 100%;
     height: auto;
+}
+
+footer .footerCopy {
+    color: #696969;
+    border-top: 1px solid #696969;
+    padding: 10px 0px;
+    margin-top: 50px;
+}
+
+footer .footerCopy a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+footer .widgetBody li,
+footer .widgetBody ul {
+    margin: 0px;
+    margin-left: 10px;
+    padding: 0px;
+    list-style-type: square;
+}
+
+footer .widgetBody #date {
+    color: #1376a7;
+    margin: 0px;
+    margin: 5px 0px 10px 0px;
+}
+
+footer .widgetBody p {
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+}
+
+footer .widgetBody li {
+    color: #FFF;
 }
 
 /* Footer */
