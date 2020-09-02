@@ -249,6 +249,7 @@ article .newsResume {
     font-size: 14px;
     color: #5c5c5c;
     line-height: 20px;
+    margin: 15px 0px 40px 0px;
 }
 
 article a {
@@ -273,6 +274,7 @@ footer {
     background-color: #1e1e1e;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footerMenu{
@@ -284,6 +286,7 @@ footer {
 .fm2,
 .fm3 {
     flex: 1;
+    padding: 25px 25px;
 }
 
 .fm1 {
@@ -295,6 +298,70 @@ footer {
 }
 .fm3 {
     background-color: #2b4c99;
+}
+
+.fmTitle {
+    color: #FFF;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.fmText {
+    color: #FFF;
+    font-size: 13px;
+}
+
+footer .widgetTitleText {
+    color: #FFF;
+}
+
+footer .footerArea {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .footerAreaItem {
+    flex: 1;
+}
+
+footer .footerArea a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+footer .widgetBody {
+    color: #696969;
+    font-size: 15px;
+}
+
+footer .LocationContact {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #696969;
+    margin-top: 20px;
+    flex-flow: row wrap;
+}
+
+footer .lcText {
+    min-width: 150px;
+}
+
+footer .social {
+    margin-top: 20px;
+}
+
+footer .icon {
+    width: 35px;
+    height: 35px;
+    background-color: #222322;
+    padding: 5px;
+    display: inline-block;
+}
+
+footer .icon img {
+    width: 100%;
+    height: auto;
 }
 
 /* Footer */
