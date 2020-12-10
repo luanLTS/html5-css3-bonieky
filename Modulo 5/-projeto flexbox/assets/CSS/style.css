@@ -37,6 +37,10 @@ header {
     align-items: center;
 }
 
+.buttonShowMenu {
+    display: none;
+}
+
 nav ul,li {
     margin: 0;
     padding: 0;
@@ -406,3 +410,65 @@ footer .widgetBody li {
 }
 
 /* Footer */
+
+/*! Responsivo */
+@media (max-width: 600px){
+
+    /* ! menu sanduiche */
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+    .logo {
+        padding: 20px;
+    }
+    .buttonShowMenu {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .buttonShowMenu img {
+        width: 25px;
+        margin-right: 20px;
+    }
+
+    /* ! Slogan */
+    
+    #banner {
+        height: auto;
+    }
+    .slogan {
+        padding: 20px;
+    }
+    .slogan h1 {
+        font-size: 50px;
+    }
+    
+    .slogan h2 {
+        font-size: 18px;
+    }
+    
+    /* ! Banners */
+
+    .options {
+        height: auto;
+        flex-direction: column;
+    }
+
+    /* ? noticias e departamentos com flex column */
+    .newColumn {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    /* ! footer option */
+
+    .footerMenu {
+        flex-direction: column;
+    }  
+    footer .footerCopy,
+    footer .footerAreaItem {
+        padding: 20px;
+    }
+}
