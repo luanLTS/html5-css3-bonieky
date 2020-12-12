@@ -1,0 +1,62 @@
+/* JetBrains Mono */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* Lobster */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* Pacifico */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+html, body {
+    height: 100%;
+}
+.container {
+    max-width: 1040px;
+    margin: auto;
+    background-color: rgba(100, 100, 100, 10);
+}
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 25px;
+    font-family: "JetBrains Mono";
+    font-weight: 1000;
+}
+
+.profile {
+    padding: 40px 0px;
+}
+
+.profileImage {
+    border: 5px solid #FFF;
+    padding: 10px;
+    box-shadow: 10px 10px 20px;
+}
+
+.profileImage img {
+    border: 1px solid #AAA;
+}
+
+.profileImage p {
+    padding: 5px 0px 0px 0px;
+    margin: 0;
+    font-size: 16px;
+    font-family: "JetBrains Mono";
+    font-style: italic;
+}
+
+.description {
+    
+}
