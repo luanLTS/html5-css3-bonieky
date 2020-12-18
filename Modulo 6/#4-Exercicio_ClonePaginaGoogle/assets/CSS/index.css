@@ -1,0 +1,153 @@
+:root {
+    --colorFooter : #F2F2F2
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 30px;
+    align-items: center;
+}
+
+header img {
+    border-radius: 20px;
+}
+
+header .grid {
+    display: flex;
+    flex-flow: row wrap;
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px;
+}
+
+header .gridIcon {
+    margin: 1px;
+    width: 4px;
+    height: 4px;
+    background-color: #666;
+}
+
+header a {
+    color: #000;
+    margin: 0px 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main .shareIcon {
+    top: 200px ;
+    right: 480px;
+    position: absolute;
+}
+
+.search {
+    width: 600px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 25px;
+    padding: 7px;
+}
+
+.search:hover {
+    box-shadow: 0px 0px 10px #dfe1e5;
+}
+
+.search img {
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px;
+}
+
+.search input {
+    border: 0px;
+    width: 534px;
+    height: 34px;
+    outline: none;
+    font-size: 18px;
+}
+.buttons button {
+    width: 140px;
+    height: 35px;
+    cursor: pointer;
+    border: 0px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin-top: 30px;
+    outline-color: #0aff;
+}
+
+footer {
+    align-self: flex-start;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+
+footer .footerBaixo,
+footer .footerCima {
+    background-color: var(--colorFooter);
+    width: 100%;
+    height: 40px;
+    color: #70757a;
+    border-top: 1px solid #dfe1e5;
+}
+
+footer .footerCima {
+    padding: 10px 30px;
+} 
+
+nav div {
+    display: inline;
+}
+
+.footerBaixo nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+.footerBaixo a {
+    font-size: 15px;
+    color: #70757a;
+    text-decoration: none;
+}
+
+.footerBaixo a:active {
+    color: #70757a;
+}
+.footerBaixo a:hover {
+    text-decoration: underline;
+}
+
+.navLeft a {
+    margin-right: 30px;
+}
+.navRight a {
+    margin-left: 30px;
+}
