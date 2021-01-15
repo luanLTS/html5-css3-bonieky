@@ -1,67 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --roboto: "Roboto";
+}
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+header nav {
+  display: inline-flex;
 }
 
 .header_segue {
-    display: flex;
-    height: 85px;
-    align-items: center;
+  display: flex;
+  height: 85px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo img {
-    width: 100px;
-    height: 30px;
-    margin: 0px 50px 0px 25px;
+  width: 100px;
+  height: 30px;
+  margin: 10px 50px 0px 25px;
 }
 
-
 .pesquisa {
-    display: flex;
-    justify-content: space-between;
-    width: 690px;
-    height: 50px;
-    padding: 15px;
-    box-shadow: 0px 0px 5px #ccc;
-    border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 690px;
+  height: 50px;
+  padding: 15px;
+  box-shadow: 0px 0px 5px #ccc;
+  border-radius: 50px;
 }
 
 .pesquisa img {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }
 
 .pesquisa input {
-    width: 565px;
-    height: 20px;
-    border: 0px;
-    outline: none;
-    font-size: 16px;
+  width: 565px;
+  height: 20px;
+  border: 0px;
+  outline: none;
+  font-size: 16px;
+  color: #aaa;
 }
 
 .pesquisa input:focus {
-    border-right: 1px solid #CCC;
+  border-right: 1px solid #ccc;
+}
+
+.menu_perfil {
+  display: inline-flex;
+}
+
+.menu_perfil img {
+  border-radius: 15px;
+}
+
+.menu_perfil,
+.menu_toggle {
+  margin-right: 30px;
 }
 
 .menu_toggle {
-    display: flex;
-    width: 15px;
-    height: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
 
 .menu_toggle div {
-    width: 3px;
-    height: 3px;
-    background-color: #DDD;
-    margin: 1px;
+  width: 4px;
+  height: 4px;
+  background-color: #aaa;
+  margin: 1px;
+  border-radius: 10px;
 }
+
+.header_fixo ul,
+.header_fixo li {
+  margin: 0;
+  padding: 0;
+}
+
+.header_fixo li {
+  display: inline;
+  padding: 13px;
+}
+
+.border:hover {
+  border-bottom: 2px solid #1a73e8;
+}
+
+.first {
+  border-bottom: 2px solid #1a73e8;
+}
+
+.header_fixo li a {
+  text-decoration: none;
+  color: #868a8d;
+}
+
+.header_fixo ul {
+  list-style-type: none;
+  margin-left: 180px;
+}
+
+.header_fixo img {
+  width: 15px;
+  height: 15px;
+}
+
+.header_fixo {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+
+header {
+  border-bottom: 1px solid #868a8d;
+}
+
+.container {
+  margin-left: 180px;
+}
+
+.aprox p {
+  color: #868a8d;
+}
+
+.content {
+  width: 600px;
+}
+
+.site .url sub {
+  font-size: 15px;
+}
+
+.site .titulo h3 {
+  margin: 3px 0px;
+  color: #1a0db3;
+}
+
+.site .titulo h3 a {
+  font-size: 23px;
+  font-weight: 100;
+  text-decoration: none;
+  color: #1a0db3;
+}
+
+.site .titulo h3 a:hover {
+  text-decoration: underline;
+}
+
+.site .titulo h3 a::after {
+  color: #1a0db3;
+}
+
+.site .descricao p {
+  margin: 0;
+}
+
+.site {
+  margin-bottom: 40px;
+}
+
+.paginacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--roboto);
+}
+
+.g_maiusculo {
+  width: 30px;
+  height: 30px;
+}
+
+.o,
+.e {
+  width: 20px;
+  height: 20px;
+}
+
+.l {
+  width: 3px;
+  height: 25px;
+}
+
+.g {
+  width: 20px;
+  height: 25px;
+  padding-top: 7px;
+}
+td {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.footer_cima,
+.footer_baixo {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: #868a8d;
+    background-color: #f2f2f2;
+    border-top: 1px solid #dadce0;
+}
+
+.barra {
+    display: inline-block;
+    width: 1px;
+    height: 25px;
+    background-color: #dadce0;
+    margin: 0px 10px;
+}
+
+.footer_cima p {
+    margin-left: 180px;
+}
+
+.footer_baixo ul,
+.footer_baixo li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.footer_baixo ul {
+    margin-left: 180px;
+}
+
+.footer_baixo li {
+    margin-right: 20px;
+}
+
