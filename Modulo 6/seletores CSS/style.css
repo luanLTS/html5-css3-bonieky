@@ -1,0 +1,103 @@
+*:not(p, ul) {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #3f3f3f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type=text] {
+    background-color: #ab1244;
+    height: 30px;
+    width: 200px;
+}
+
+input[type=number] {
+    background-color: #00f9a0;
+    height: 15px;
+    width: 100px;
+}
+
+input[type=email] {
+    background-color: #1ff9f0;
+    height: 45px;
+    width: 300px;
+}
+
+a[href*="saude"] {
+    color: #00a0da;
+    font-size: 19px;
+}
+
+a[href^="https"]{
+    color: blueviolet;
+}
+
+
+a[href*="economia"] {
+    color: crimson;
+    font-size: 19px;
+}
+
+
+span {
+    background-color: fuchsia;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+.divs div {
+    background-color: darkblue;
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+}
+
+.divs div:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.divs div:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+p:empty {
+    background-color: gold;
+    display: block;
+    height: 10px;
+}
+
+ul li {
+    background-color: #6f6f6f;
+}
+
+ul li:nth-child(1){
+    color:hotpink;
+}
+
+ul li:nth-child(2){
+    color:green;
+}
+
+ul li:nth-child(3){
+    color:blueviolet;
+}
+
+ul li:nth-child(4){
+    color:cyan;
+}
+
+ul li:nth-child(5){
+    color:greenyellow;
+}
+
+ul li:nth-child(2n+1) {
+    background-color: #fff;
+}
+
+ul li:nth-child(2n+2) {
+    background-color: #888;
+}
