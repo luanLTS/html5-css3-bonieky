@@ -1,0 +1,34 @@
+:root{
+    --heightHeader : 175px;
+}
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    display: flex;
+}
+header {
+    background-color: #aaa;
+    width: 100vw;
+    height: var(--heightHeader);
+}
+aside {
+    left: 0%;
+    background-color: #bbb;
+    width: 200px;
+    height: calc(80vh - var(--heightHeader));
+}
+main {
+    width: calc(100vw - 200px);
+    height: calc(80vh - var(--heightHeader));
+    background-color: #ccc;
+}
+footer{
+    bottom: 0%;
+    background-color: #aaa;
+    width: 100vw;
+    height: 20vh;
+}
