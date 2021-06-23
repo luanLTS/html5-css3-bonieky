@@ -1,0 +1,134 @@
+--Responsividade
+    -Mobile First
+    criado por volta do 2009 e 2010
+    quando foi criado pensava primeriamente na versão mobile do site e depois era adaptado para a versão de pc,
+    mas isso gerou alguns problemas de sites muito simples pois a tela do pc é bem maior e possui mais espaço do que em um mobile.
+    Assim foi evoluindo e agora sempre vamos pensar em algo para um desktop, fazemos todo a estrutura já pensando em comovai ficar
+    em um dispositivo mobile
+
+    -Layout adaptativo vs Layout responsivo
+        -Responsivo
+        o site é feito pensando para ir diminuindo de tamanho de acordo com o tamanho da tela, sem elementos com tamonhos fixos
+        Não cria barra de rolagem lateral
+
+        -Adaptativo
+        o site se adapta a tamanho específicos de telas, ele tem pontos de quebra, no qual ele altera o tamanho dos elementos
+
+        geralmente é utilizado os dois tipos de layout, ele é adaptativo, pois possuem tamanho em que ele vai se adaptar, porem
+        esses tamanhos vão diminuindo de maneira mais fluida, responsiva
+
+        tamanho usados geralmente
+        320px
+        480px
+        760px       Adaptativo
+        960px
+        1200px
+        1600px
+
+        320
+        760         Responsivo + Adpatativo
+        960
+        1600
+    
+    -viewport
+    como o navegados vai interpretar o site
+    content="width=device-width, -> ele pega a largura da página e coloca igual a largura do dispositivo
+    user-scalable=no" -> não permite que o usuário dê zoom na pagina e quebre o layout do site
+
+
+    -imagens responsivas: picture e source
+    com a tag picture é possivel definir imagens diferentes apartir das tags source e de acordo com o tamanho da tela apareça
+    determinada imagem
+    Estrutura:
+        <picture>
+            <source media="(condicao de exibição)" srcset="caminho da imagem" />
+            <source media="(min-width: 600px)" srcset="./assets/image/image1.jpg" />
+        </picture>
+    
+
+    -imagens responsivas: propriedade object-fit
+    quando definimos um tamanho para imagens ela por distorcer
+    via css podemos resolver esse problema com a propriedade object-fit
+    fill -> coloca a imagem em todo o tamanho definido mesmo que distorça
+    contain -> deixa o tamanho proporcional dentro do tamanho definido sem distorcer, porem deixa espacos em branco
+    cover -> não distorce a imagem, ele corta a imagem de maneira central de modo que ele caiba no tamanho definido
+    none -> ele corta a imagem sem ajustar antes a proporção
+    scale-down -> diminui a qualidade da imagem e tem o comportamento similar ao contain para redimensionar a imagem
+
+    -Css @media
+    monta breakpoint onde o layout precisa se adaptar ao tamanho da tela do dispositivo
+    consegue mudar as propriedades de todos os elementos dentro das media queries
+    o @media é responsavel por permitir a responsividade do site
+
+    Estrutura :
+    @media (condicão) {
+        elemento{
+            propriedades:;
+        }   
+    }
+
+    @media only print {
+        elemento{
+            propriedades:;
+        }
+    }
+    com o only print eu consigo definir as propriedades dos elementos somente quando for imprimir o site.
+    Podemos utilizar tambem o only screen
+
+        -orientation
+        verifica se a tela esta na horizontal ou na vertical
+        @media (orientation: landscape) { // landscape é quando a tela esta na vertical
+            ...
+        }
+        @media (orientation: portrait) { //portrait é quando a tela esta na horizontal
+            ...
+        }
+
+        ele não trbalha com a posição real do celular por exemplo, ele trabalha com a proporção da tela
+        altura maior significa que a tela esta em landscape
+        largura maior significa que a tela esta em portrait
+
+
+    -aspect-ratio 
+    é a proporção da tela em relação a kargura para a altura
+    estrutura:
+    @media (aspect-ratio: 1/1){ // 1 de largura pra 1 de altura == quadrado perfeito
+        ...
+    }
+    2/1 -> o dobro da altura para a largura
+    1/2 -> o dobro de largura para a altura
+
+    -função var
+    serve para definir nomes padroes para propriedades que se repetem no decorrer do codigo
+    por exempo, tem uma cor muito utilizada para fontes: #1e1e1e;
+    ao inves de sempre color #1e1e1e
+    voce declara uma variavel com um nome para essa cor
+    Estrutura:
+    :root {
+        nome da variavel: valor;
+        --fontColor: #1e1e1e;
+    }
+
+    color: var(--fontColor);
+
+    -função var dentro do media query
+    quando criar o breakpoint eu altero diretamente a variavel com o :root{} ao inves de
+    criar mais de uma variavel, ou sobreescrever com um valor fixo na propriedade
+
+    -hack css: altura relativa a altura
+    para trabalhar com a altura relativa nos usamos o padding com 3 valores
+    padding: top sides bottom
+    padding: 0px 0px 56.25%;
+    deste jeito ele vai pegar a porcentagem que determinamos em relação a largura
+    
+
+    -função min e max
+    ela pega o maior ou menor valor dada as opções passadas para a função
+    max(50%, 300px) // pega o maior valor dentro desses dois passados para ele.
+    min(50%, 300px) // pega o menor valor dentro desses dois passados para ele
+
+    Isso ajuda na responsividade do site, caso seja passado uma medida fixa e outra relativa.
+
+
+    -função calc
+    

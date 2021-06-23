@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*! Object-fit */
+
+#of1 {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+#of2 {
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+}
+
+#of3 {
+    width: 350px;
+    height: 350px;
+    object-fit: fill;
+}
+
+#of4 {
+    width: 350px;
+    height: 350px;
+    object-fit: scale-down;
+}
+
+
+/*! Object-fit */
+
+
+/*!  @media  */
+
+body {
+    background-color: cadetblue;
+}
+
+@media (min-width: 1000px) {
+    body {
+        background-color: cornflowerblue;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 600px) {
+    body {
+        background-color: chartreuse;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) and (min-width: 300px) {
+    body {
+        background-color: dodgerblue;
+    }
+    h1 {
+        font-size: 1rem;
+    }
+}
+
+
+/*!  @media  */
+
+
+/*!  Orientation  */
+
+.flex {
+    display: flex;
+    padding: 10px;
+    height: 500px;
+}
+
+.flex div {
+    border: 2px solid #000;
+    flex: 1;
+    max-height: 250px;
+}
+
+@media (Orientation: portrait) {
+    .flex {
+        flex-direction: column;
+    }
+}
+
+@media (Orientation: landscape) {
+    .flex {
+        flex-direction: row;
+    }
+}
+
+
+/*!  Orientation  */
+
+
+/*!  funcao var  */
+
+:root {
+    --c-title: #123456
+}
+
+.funcao-var {
+    width: 500px;
+    height: 10%;
+    background-color: rgba(55, 200, 200, .5);
+    font-size: 3rem;
+    text-align: center;
+    color: var(--c-title);
+}
+
+
+/*!  funcao var  */
+
+
+/*! Hack css: altura relativa a altura */
+
+.video {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.video-area {
+    position: relative;
+    width: 100%;
+    height: 0px;
+    padding: 0px 0px 56.25%;
+}
+
+.video-area iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 20px;
+    border: 10px double #000;
+}
+
+
+/*! Hack css: altura relativa a altura */
+
+
+/*! função max e min */
+
+#funcao-max {
+    width: max(50%, 400px);
+}
+
+#funcao-min {
+    width: min(50%, 400px);
+}
+
+
+/*! função max e min */
+
+
+/*! função calc() */
+
+.funcao-calc {
+    width: calc(100% - 50px);
+    height: 200px;
+    background-color: #ccc;
+}
+
+
+/*! função calc() */
