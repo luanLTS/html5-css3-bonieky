@@ -131,4 +131,23 @@
 
 
     -função calc
-    
+    utilizado para fazer calculos entre diferentes tipos de medias
+    Estrutura:
+    propriedade: calc(calculo);
+    width: calc(100hw - 10px);
+
+Semântico HTML
+
+--Tag Address
+SEO, essa tag informa as informacoes de contatos da empresa ou do site
+Pode ter mais de uma tag address espalhadas pelo site
+Em alguns navegadores pode ser renderizada em italico
+
+--Tag figure
+utilizada geralmente com legenda e mostrar que ela faz parte do texto, seja um grafico, codigo, imagem...
+
+Estrutura:
+<figure>
+    <img />
+    <figcaption></figcaption>
+</figure>
