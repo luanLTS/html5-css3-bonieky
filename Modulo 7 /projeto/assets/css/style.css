@@ -144,19 +144,19 @@ header .header-menu ul li:nth-child(1) {
 #content aside {
   flex: 1;
 }
-
-#content .title-section {
+.title-section {
   font-size: 1.25rem;
   font-weight: bold;
   position: relative;
 }
 
-#content .title-section::after {
+.title-section::after {
   content: "";
   background-color: var(--carolina-blue);
   position: absolute;
   height: 3px;
   width: 76px;
+  left: 0;
   bottom: -10px;
 }
 
@@ -248,4 +248,85 @@ header .header-menu ul li:nth-child(1) {
 
 .widget .widget-resume {
   font-size: 1rem;
+}
+
+footer {
+  background-color: #171617;
+}
+
+footer .banners {
+  flex: 1;
+}
+
+footer .container {
+  flex-direction: column;
+}
+
+.footer-menu {
+  display: flex;
+  flex: 1;
+}
+
+footer .title-section {
+  color: #fff;
+}
+
+.footer-menu .option {
+  color: #6d6d6d;
+  flex: 1;
+}
+
+.footer-menu .option .option-resume {
+  font-size: .75rem;
+  margin: 30px 0px;
+}
+
+footer .contacts-list div {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .contacts-list div p {
+  margin: 0;
+  font-size: .80rem;
+  flex: 1;
+}
+
+footer a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer .social-media {
+  margin: 30px 0px;
+}
+
+footer .social-media i {
+  font-size: 1.25rem;
+  padding: 5px;
+  color: #5d5c5c;
+  background-color: #2d2c2c;
+  cursor: pointer;
+}
+
+.footer-menu .option .option-resume ul {
+  padding-left: 15px;
+}
+
+.footer-menu .option .option-resume ul li{
+  list-style-type: "🠒";
+  color: #fff;
+  font-size: .8rem;
+  line-height: 1rem;
+  padding: 0px 5px;
+}
+
+.footer-menu .option .option-resume .year {
+  font-size: .75rem;
+  color: var(--carolina-blue);
+}
+
+.gray {
+  color: #5d5c5c;
 }
