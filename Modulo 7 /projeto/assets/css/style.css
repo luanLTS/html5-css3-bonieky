@@ -43,12 +43,12 @@ header {
   justify-content: space-between;
   align-items: center;
   flex: 1;
-  height: 90px;
+  height: 120px;
 }
 
 header .header-logo img {
   width: 100%;
-  max-width: 250px;
+  min-width: 250px;
 }
 
 header .header-menu nav ul {
@@ -57,15 +57,13 @@ header .header-menu nav ul {
 
 header .header-menu nav ul li {
   list-style-type: none;
-  margin-right: 28px;
-  padding: 10px;
+  padding: 20px;
   cursor: pointer;
   font-size: 1rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header .header-menu ul li:hover,
-header .header-menu ul li:nth-child(1) {
+header .header-menu ul li:hover {
   color: #fff;
   background-color: var(--carolina-blue);
 }
@@ -323,10 +321,67 @@ footer .social-media i {
 }
 
 .footer-menu .option .option-resume .year {
-  font-size: .75rem;
+  font-size: .8rem;
   color: var(--carolina-blue);
 }
 
 .gray {
   color: #5d5c5c;
+}
+
+.copyright {
+  font-size: .75rem;
+  padding: 20px 0px;
+  border-top: 1px solid #5d5c5c;
+}
+
+.menu-mobile {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40px;
+  height: 40px;
+  margin: 40px 0px;
+}
+
+.menu-mobile div {
+  height: 5px;
+  background-color: var(--carolina-blue);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0px 10px;
+  }
+
+  .container,
+  .banners,
+  .footer-menu {
+    flex-direction: column;
+  }
+
+  #banner {
+    height: auto;
+  }
+
+  .header-menu ul {
+    flex-direction: column;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 0px;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    top: 120px;
+  }
+
+  .header-menu nav {
+    display: none;
+  }
+  
+  .menu-mobile {
+    display: flex;
+  }
+
 }
