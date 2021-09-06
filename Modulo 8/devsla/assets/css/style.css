@@ -55,14 +55,15 @@ header ul li a {
     color: #000;
 }
 
-main {
+main, 
+section {
     background-image: url(../images/bg.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
 
-main .info {
+ .info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,7 +71,7 @@ main .info {
     height: 45vh;
 }
 
-main .info h1 {
+ .info h1 {
     font-size: 2.75rem;
     padding: 0px;
     margin: 0px;
@@ -78,7 +79,7 @@ main .info h1 {
     font-family: "GothamMedium";
 }
 
-main .info p {
+ .info p {
     font-size: 1.25rem;
     padding: 0px;
     margin: 0px;
@@ -87,7 +88,7 @@ main .info p {
     position: relative;
 }
 
-main .info a {
+ .info a {
     color: var(--textColor);
 }
 
