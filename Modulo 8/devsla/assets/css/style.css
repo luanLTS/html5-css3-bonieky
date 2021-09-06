@@ -1,0 +1,148 @@
+@font-face {
+    font-family: GothamMedium;
+    src: url(../fonts/GothamMedium.otf);
+}
+
+@font-face {
+    font-family: GothamBookRegular;
+    src: url(../fonts/GothamBookRegular.otf);
+}
+
+:root {
+    --textColor: #4d4d4d;
+    --titleColor: #383737;
+}
+
+@keyframes arrow-motion {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(15px); }
+    100% { transform: translateY(0px); }
+}
+
+body {
+    font-family: 'GothamMedium';
+    font-size: 1.15rem;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+header .leftSide img {
+    max-width: 10rem;
+}
+
+header ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 15px;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #000;
+}
+
+main {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+main .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+}
+
+main .info h1 {
+    font-size: 2.75rem;
+    padding: 0px;
+    margin: 0px;
+    color: var(--titleColor);
+    font-family: "GothamMedium";
+}
+
+main .info p {
+    font-size: 1.25rem;
+    padding: 0px;
+    margin: 0px;
+    color: var(--textColor);
+    font-family: "GothamBookRegular";
+    position: relative;
+}
+
+main .info a {
+    color: var(--textColor);
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 50px;
+}
+
+footer .btns button {
+    width: 250px;
+    height: 50px;
+    border: 0;
+    border-radius: 25px;
+    font-size: .85rem;
+    font-family: "GothamBookRegular";
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.btn-rigth {
+    background-color: rgba(255, 255, 255, .65);
+    color: rgb(26, 27, 32);
+}
+
+.btn-left {
+    background-color: rgba(26, 27, 32, .9);
+    color: rgb(255, 255, 255);
+}
+
+footer .arrow-down img {
+    width: 30px;
+    padding-top: 10px;
+    animation: arrow-motion 2s infinite;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@media (max-width: 1200px) {
+    header .meddle {
+        display: none;
+    }
+
+    header .rightSide li:not(:nth-child(3)) {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    footer .btns {
+        display: flex;
+        flex-direction: column;
+    }
+}
