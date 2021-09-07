@@ -64,13 +64,13 @@ header {
     border-bottom: 5px solid var(--bg-dark);
     font-family: 'Montserrat';
     font-weight: 600;
-    font-size: .8rem;
+    font-size: 0.8rem;
     padding: 0px 8px;
     text-transform: uppercase;
-    transition: all .2s;
+    transition: all 0.2s;
 }
 
-.menu li a:hover{
+.menu li a:hover {
     border-bottom: 5px solid var(--camel);
 }
 
@@ -92,7 +92,7 @@ header {
     width: 100vw;
     height: 100%;
     display: inline-block;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .banner .slide-area {
@@ -105,7 +105,7 @@ header {
 }
 
 .banner .slide-area h1,
-.banner .slide-area h2, 
+.banner .slide-area h2,
 .banner .slide-area a {
     color: var(--bg-light-gray);
     text-transform: uppercase;
@@ -119,7 +119,6 @@ header {
 .banner .slide-area h1 span {
     color: var(--camel);
 }
-
 
 .banner .sliders-count {
     position: absolute;
@@ -144,12 +143,13 @@ header {
 
 .default {
     padding: 20px 0px;
+    font-family: 'Montserrat';
 }
 
-.default .section-title, 
+.default .section-title,
 .default .section-sub-title {
     font-weight: 600;
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     text-transform: uppercase;
     text-align: center;
 }
@@ -159,7 +159,7 @@ header {
 }
 
 .default .section-sub-title {
-    font-size: .9rem;
+    font-size: 0.9rem;
     margin: 10px 0px 40px;
     color: var(--bg-dark-gray);
 }
@@ -185,7 +185,6 @@ header {
     color: var(--bg-gray);
 }
 
-
 .button {
     text-decoration: none;
     display: inline-block;
@@ -194,14 +193,9 @@ header {
     margin: 20px 0px;
     border-radius: 30px;
     color: #f7f7f7;
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     font-weight: 600;
 }
-
-
-
-
-
 
 .section-aboutus {
     display: flex;
@@ -213,7 +207,6 @@ header {
 
 .section-aboutus .section-aboutus-left p {
     line-height: 25px;
-
 }
 
 .section-aboutus .section-aboutus-right {
@@ -221,18 +214,16 @@ header {
     padding: 0px 20px;
 }
 
-
 .section-aboutus .section-aboutus-right img {
     max-width: 450px;
     width: 100%;
     box-shadow: 0px 0px 20px black;
 }
 
-
 .section-services {
     display: flex;
     text-align: center;
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
 }
 
 .section-services .section-service {
@@ -255,4 +246,91 @@ header {
     font-size: 1rem;
     margin-top: 10px;
     color: var(--bg-dark-gray);
+}
+
+.section-projects {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-projects .filter-projects {
+    background-color: #eeeeee;
+    height: 50px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+    border: 1px solid #ccc;
+    color: var(--bg-dark-gray);
+}
+
+.section-projects .filter-projects ul,
+.section-projects .filter-projects li {
+    list-style-type: none;
+    height: inherit;
+    line-height: 50px;
+}
+
+.section-projects .filter-projects li {
+    display: inline-block;
+    padding: 0px 15px;
+    border-left: 1px solid #ccc;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.section-projects .filter-projects li:first-child {
+    border: 0;
+}
+
+.section-projects .filter-projects li:hover {
+    border-bottom: 3px solid var(--camel);
+}
+
+.section-projects .gallery-projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 1200px;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.section-projects .gallery-projects .photo-area {
+    width: 280px;
+    height: 180px;
+}
+
+.section-projects .gallery-projects .photo-area img {
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+
+.section-projects .gallery-projects .photo-info {
+    position: absolute;
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.section-projects .gallery-projects .photo-info h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.section-projects .gallery-projects .photo-area:hover .photo-info {
+    opacity: 1;
 }
