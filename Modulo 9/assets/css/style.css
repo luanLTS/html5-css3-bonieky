@@ -334,3 +334,57 @@ header {
 .section-projects .gallery-projects .photo-area:hover .photo-info {
     opacity: 1;
 }
+
+.bg-image {
+    background-image: url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+}
+
+.bg-image .section-team-mask {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0px;
+}
+
+.section-team .sliders {
+    max-width: 1080px; /* muda o tamanho para poder esconder ou aparecer os cards dependendo do tamanho do dispositivos */
+    display: flex;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.section-team .slide {
+    width: 340px;
+    height: 420px;
+    background-color: #fff;
+    margin: 10px;
+}
+
+.section-team .slide-area {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sliders-count {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.sliders-count .pointer {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin: 0px 5px;
+    border: 1px solid var(--camel);
+    cursor: pointer;
+}
+
+.sliders-count .pointer:nth-child(1) {
+    background-color: var(--camel);
+}
