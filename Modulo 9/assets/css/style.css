@@ -6,6 +6,10 @@
     --bg-dark-gray: #999999;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -116,12 +120,110 @@ header {
     color: var(--camel);
 }
 
-.banner .slide-area a {
+
+.banner .sliders-count {
+    position: absolute;
+    width: 100vw;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.banner .sliders-count .pointer {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin: 0px 5px;
+    border: 1px solid var(--camel);
+    cursor: pointer;
+}
+
+.banner .sliders-count .pointer:nth-child(1) {
+    background-color: var(--camel);
+}
+
+.default {
+    padding: 20px 0px;
+}
+
+.default .section-title, 
+.default .section-sub-title {
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.default .section-title {
+    font-size: 1.2rem;
+}
+
+.default .section-sub-title {
+    font-size: .9rem;
+    margin: 10px 0px 40px;
+    color: var(--bg-dark-gray);
+}
+
+.default .section-body {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.light {
+    background-color: var(--bg-light-gray);
+}
+
+.light .section-title {
+    color: var(--bg-dark);
+}
+
+.dark {
+    background-color: var(--bg-dark);
+}
+
+.dark .section-title {
+    color: var(--bg-gray);
+}
+
+
+.button {
     text-decoration: none;
-    display: block;
+    display: inline-block;
     padding: 15px 20px;
     background-color: var(--camel);
     margin: 20px 0px;
     border-radius: 30px;
+    color: #f7f7f7;
+    font-family: "Montserrat";
+    font-weight: 600;
 }
 
+
+
+
+
+
+.section-aboutus {
+    display: flex;
+}
+
+.section-aboutus .section-aboutus-left {
+    flex: 1;
+}
+
+.section-aboutus .section-aboutus-left p {
+    line-height: 25px;
+
+}
+
+.section-aboutus .section-aboutus-right {
+    width: 520px;
+    padding: 0px 20px;
+}
+
+
+.section-aboutus .section-aboutus-right img {
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0px 0px 20px black;
+}
